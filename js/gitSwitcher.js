@@ -10,7 +10,7 @@ Bonus challenge: request access to a classmate's repo, pull it down and edit the
 of one of their day cases
 */
 
-var grade = "Saturday";
+var grade = prompt('What day of the week is it?');
 
 switch(grade) {
 	case 'Sunday':
@@ -41,6 +41,6 @@ switch(grade) {
 		console.log('Today is fund day!');
 		break;
 
-	//default:
-		//console.log('Unexpected grade value entered');
+	default:
+		console.log('Please enter the day of the week.');
 }
