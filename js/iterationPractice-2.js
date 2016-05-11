@@ -15,9 +15,9 @@ for (var i=99; i >= 0; i--) {
 		console.log(takeOneDown);
 		console.log(i-1 + bottles);
 		console.log(' ');
-		alert('Ending 1 bottle of beer');
+		//alert('Ending 1 bottle of beer');
 	} else {
-		alert('Starting 0 bottles of beer');
+		//alert('Starting 0 bottles of beer');
 		console.log('No bottles of beer on the wall!');
 		console.log('No bottles of beer!');
 		console.log('You need to buy more beer!');
