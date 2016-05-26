@@ -42,10 +42,8 @@ window.onload = function() {
   clearListItem = document.getElementById('clear-thing-button');
   clearListItem.onclick = function(event) {
       var userListItem = document.getElementById('fav-list').lastChild;
-      //console.log('This is it ' + userListItem);
       event.preventDefault();
-      //clearListItem.removeChild(clearListItem[0]);
-      //alert('remove something');
+      //alert('remove the last damn LI');
       userListItem.parentNode.removeChild(userListItem);
   };
 };
