@@ -41,7 +41,7 @@ window.onload = function() {
       var userListItem = document.getElementById('fav-list').lastChild;
       event.preventDefault();
       //alert('remove the last damn LI');
-      userListItem.parentNode.removeChild(userListItem);
+      userListItem.remove();
     };
   };
 
