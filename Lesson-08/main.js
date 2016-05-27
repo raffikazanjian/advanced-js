@@ -36,7 +36,7 @@ window.onload = function() {
   	}
   };
   
-  clearListItem = document.getElementById('clear-thing-button');
+  var clearListItem = document.getElementById('clear-thing-button');
   clearListItem.onclick = function(event) {
       var userListItem = document.getElementById('fav-list').lastChild;
       event.preventDefault();
@@ -48,7 +48,7 @@ window.onload = function() {
 
 
 
-MyApp = {};
+var MyApp = {};
 
 MyApp.add_to_list = function(list) {
 	var favlist = document.getElementById('fav-list');
