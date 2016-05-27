@@ -35,9 +35,6 @@ window.onload = function() {
   		document.getElementById('new-thing').value = '';
   	}
   };
-
-  var userListItem = document.getElementById('fav-list').lastChild;
-  console.log('This is it ' + userListItem);
   
   clearListItem = document.getElementById('clear-thing-button');
   clearListItem.onclick = function(event) {
@@ -45,8 +42,8 @@ window.onload = function() {
       event.preventDefault();
       //alert('remove the last damn LI');
       userListItem.parentNode.removeChild(userListItem);
+    };
   };
-};
 
 
 
