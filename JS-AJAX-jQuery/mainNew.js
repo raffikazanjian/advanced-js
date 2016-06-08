@@ -32,14 +32,26 @@ $(function() {
 			for(i=0; i < forecastObject.list.length; i++) {
 				if(i >= 0) {
 					var tempCelcius = forecastObject.list[i].main.temp_min;
-					var dateTime = forecastObject.list[i].dt;
-					console.log(dateTime);
-					console.log('----------');
-					console.log('The tempreture is: ' + tempCelcius + ' degrees Celcius.');
+					var dateTime = forecastObject.list[i].dt_txt;
+					var date = new Date(dateTime);
+					date.toString();
+					//console.log(date);
+					//console.log('----------');
+					//console.log('The tempreture is: ' + tempCelcius + ' degrees Celcius.');
+
+					var $source = $('#weather-posts').html();
+					var template = Handlebars.compile($source);
+					var weatherData = {
+						time: date,
+						tempreture: tempCelcius
+					};
+					var fullTemplate = template(weatherData);
+					$('body').append(fullTemplate);
 				} else {
 					alert('WTF just happened??');
-				};
-			};
+				}
+					
+			}
 		},
 		error: function() {
 			console.error('API error');
