@@ -2,6 +2,21 @@ body {
 	background-color: #292E37;
 }
 
+form {
+	margin: 25px 0;
+}
+
+form input {
+	display: inline;
+	width: 180px;
+	height: 35px;
+}
+
+form input[type=submit] {
+	height: 42px;
+	margin-left: 10px;
+}
+
 div {
 	width: 65%;
 	border: 2px solid #fff;
